@@ -115,6 +115,36 @@
         .social-icon:hover {
             color: var(--accent);
         }
+        
+        .phone-highlight {
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .phone-highlight:hover {
+            background-color: #e05a00;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .coverage-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--accent);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -124,9 +154,14 @@
             <a class="navbar-brand" href="#">
                 <i class="bi bi-wifi"></i> Suprifibra Telecom
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center">
+                <a href="tel:8534932788" class="phone-highlight d-none d-md-block me-3">
+                    <i class="bi bi-telephone-fill me-2"></i>(85) 3493-2788
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -137,6 +172,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cobertura">Cobertura</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
@@ -154,7 +192,13 @@
         <div class="container text-center">
             <h1 class="display-4 fw-bold">Internet Rápida e Estável para sua Casa ou Empresa</h1>
             <p class="lead">Conecte-se com o mundo em alta velocidade com a melhor infraestrutura de Fortaleza</p>
-            <a href="#planos" class="btn btn-accent btn-lg mt-3">Conhecer Planos</a>
+            <a href="tel:8534932788" class="phone-highlight mt-3">
+                <i class="bi bi-telephone-fill me-2"></i>(85) 3493-2788
+            </a>
+            <div class="mt-4">
+                <a href="#planos" class="btn btn-accent btn-lg me-2">Conhecer Planos</a>
+                <a href="#contato" class="btn btn-outline-light btn-lg">Fale Conosco</a>
+            </div>
         </div>
     </section>
 
@@ -169,7 +213,7 @@
                             <i class="bi bi-house-door"></i>
                         </div>
                         <h3>Internet Residencial</h3>
-                        <p>Planos de internet fibra óptica para sua casa com velocidade simétrica e estabilidade garantida.</p>
+                        <p>Planos de internet fibra óptica para sua casa com velocidade simétrica e estabilidade garantida para streaming, games e home office.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -178,7 +222,7 @@
                             <i class="bi bi-building"></i>
                         </div>
                         <h3>Internet Empresarial</h3>
-                        <p>Soluções completas para empresas com suporte dedicado e garantia de uptime.</p>
+                        <p>Soluções completas para empresas com suporte dedicado, garantia de uptime e link backup para maior confiabilidade.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -186,8 +230,8 @@
                         <div class="icon-box">
                             <i class="bi bi-headset"></i>
                         </div>
-                        <h3>Suporte Técnico</h3>
-                        <p>Equipe especializada pronta para resolver qualquer problema 24/7.</p>
+                        <h3>Suporte Técnico 24/7</h3>
+                        <p>Equipe especializada pronta para resolver qualquer problema a qualquer hora do dia ou da noite.</p>
                     </div>
                 </div>
             </div>
@@ -198,9 +242,11 @@
     <section id="planos" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Nossos Planos</h2>
+            <p class="text-center mb-5">Escolha o plano ideal para suas necessidades com instalação gratuita</p>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card text-center h-100">
+                    <div class="card text-center h-100 position-relative">
+                        <div class="coverage-badge">Rachel de Queiroz</div>
                         <div class="card-header bg-primary text-white py-4">
                             <h3>200 Mbps</h3>
                             <h4 class="fw-bold">R$ 99,90/mês</h4>
@@ -211,13 +257,15 @@
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Upload até 100 Mbps</li>
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Wi-Fi Grátis</li>
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Instalação gratuita</li>
+                                <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte 24 horas</li>
                             </ul>
-                            <button class="btn btn-primary">Contratar Agora</button>
+                            <a href="https://wa.me/558534932788?text=Olá! Gostaria de contratar o plano de 200 Mbps" class="btn btn-primary">Contratar Agora</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center h-100">
+                    <div class="card text-center h-100 position-relative">
+                        <div class="coverage-badge">Rachel de Queiroz</div>
                         <div class="card-header bg-primary text-white py-4">
                             <h3>300 Mbps</h3>
                             <h4 class="fw-bold">R$ 129,90/mês</h4>
@@ -228,13 +276,15 @@
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Upload até 150 Mbps</li>
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Wi-Fi Grátis</li>
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Instalação gratuita</li>
+                                <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte prioritário</li>
                             </ul>
-                            <button class="btn btn-primary">Contratar Agora</button>
+                            <a href="https://wa.me/558534932788?text=Olá! Gostaria de contratar o plano de 300 Mbps" class="btn btn-primary">Contratar Agora</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center h-100">
+                    <div class="card text-center h-100 position-relative">
+                        <div class="coverage-badge">Rachel de Queiroz</div>
                         <div class="card-header bg-primary text-white py-4">
                             <h3>500 Mbps</h3>
                             <h4 class="fw-bold">R$ 179,90/mês</h4>
@@ -245,8 +295,35 @@
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Upload até 250 Mbps</li>
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Wi-Fi Grátis</li>
                                 <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Instalação gratuita</li>
+                                <li class="py-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte empresarial</li>
                             </ul>
-                            <button class="btn btn-primary">Contratar Agora</button>
+                            <a href="https://wa.me/558534932788?text=Olá! Gostaria de contratar o plano de 500 Mbps" class="btn btn-primary">Contratar Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cobertura -->
+    <section id="cobertura" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Área de Cobertura</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Atendemos o bairro Rachel de Queiroz e região</h3>
+                    <p>Nossa infraestrutura de fibra óptica está disponível em todo o bairro Rachel de Queiroz e estamos expandindo para áreas vizinhas.</p>
+                    <p>Faça uma consulta para verificar se sua rua está em nossa área de cobertura.</p>
+                    <div class="mt-4">
+                        <a href="tel:8534932788" class="btn btn-accent">
+                            <i class="bi bi-telephone-fill me-2"></i>Verificar Cobertura
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='300' viewBox='0 0 500 300'><rect width='500' height='300' fill='%23f8f9fa'/><path d='M100,50 L400,50 L400,250 L100,250 Z' fill='%230a4da2' fill-opacity='0.1' stroke='%230a4da2'/><text x='250' y='140' font-family='Arial' font-size='16' fill='%230a4da2' text-anchor='middle' font-weight='bold'>Bairro Rachel de Queiroz</text><text x='250' y='160' font-family='Arial' font-size='14' fill='%230a4da2' text-anchor='middle'>Fortaleza - CE</text><circle cx='250' cy='100' r='30' fill='%23ff6b00' fill-opacity='0.2' stroke='%23ff6b00'/><text x='250' y='105' font-family='Arial' font-size='12' fill='%23ff6b00' text-anchor='middle'>Cobertura</text><text x='250' y='200' font-family='Arial' font-size='12' fill='%236c757d' text-anchor='middle'>Rua H, 446 - Centro</text></svg>" class="img-fluid rounded" alt="Mapa de Cobertura">
                         </div>
                     </div>
                 </div>
@@ -255,7 +332,7 @@
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="py-5">
+    <section id="sobre" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Sobre a Suprifibra</h2>
             <div class="row align-items-center">
@@ -288,9 +365,10 @@
                             <h4 class="card-title">Informações de Contato</h4>
                             <ul class="list-unstyled">
                                 <li class="mb-3"><i class="bi bi-geo-alt-fill text-primary me-2"></i> Rua H (Lot Expedicionarios II) 446, Rachel de Queiroz, Fortaleza-CE, CEP: 60714-715</li>
-                                <li class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i> (85) 99999-9999</li>
+                                <li class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i> <a href="tel:8534932788" class="text-decoration-none">(85) 3493-2788</a></li>
                                 <li class="mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i> contato@suprifibra.com.br</li>
                                 <li class="mb-3"><i class="bi bi-instagram text-primary me-2"></i> @suprifibra</li>
+                                <li class="mb-3"><i class="bi bi-whatsapp text-primary me-2"></i> <a href="https://wa.me/558534932788" class="text-decoration-none">(85) 3493-2788</a></li>
                             </ul>
                         </div>
                     </div>
@@ -327,7 +405,7 @@
             <div class="mb-4">
                 <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://wa.me/558534932788" class="social-icon"><i class="bi bi-whatsapp"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
             </div>
             <p>Suprifibra Solucoes Tecnologica LTDA - CNPJ: 28.324.565/0001-43</p>
